@@ -2,7 +2,7 @@ name: Deployment
 on:
   push:
     branches:
-      - main
+      - master
       - dev
 env:
   MONGODB_DB_NAME: gha-demo
@@ -11,7 +11,7 @@ jobs:
     env:
       MONGODB_CLUSTER_ADDRESS: cluster0.9ntwh2o.mongodb.net
       MONGODB_USERNAME: lakshmikanthtn
-      MONGODB_PASSWORD: 3oHC4SJR3OjzuEEE
+      MONGODB_PASSWORD: sG6ZQOoGoEQ8hh8y
       PORT: 8080 
     environment: testing
     runs-on: ubuntu-latest
